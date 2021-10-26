@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
             val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
 
-            val selectedDateInMinutes = (sdf.parse(selectedDate))!!.time / 60000//theDate!!.time / 60000
+            val selectedDateInMinutes = (sdf.parse(selectedDate))!!.time / 60000
             val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
 
             val currentDateInMinutes = currentDate!!.time / 60000
